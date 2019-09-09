@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
 {
+
+    // チュートリアル用ステージのスクリプト
     public Image load;
     public Text tutorial1;
     public Text tutorial2;
