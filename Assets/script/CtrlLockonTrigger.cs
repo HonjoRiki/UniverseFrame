@@ -27,10 +27,13 @@ public class CtrlLockonTrigger : MonoBehaviour
     // レーザー効果音
     public AudioClip sound1;
     public AudioClip sound2;
-    public AudioClip ChageComp;
+    public AudioClip ChargeComp;
     private AudioSource LaserSound;
     bool LockOnSound;
     bool NormalSound;
+    bool ChargeSoundFrag;
+
+    public GameObject ChargeEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,8 @@ public class CtrlLockonTrigger : MonoBehaviour
         LaserSound = GetComponent<AudioSource>();
         LockOnSound = false;
         NormalSound = false;
+        ChargeSoundFrag = false;
+        ChargeEffect.SetActive(false);
     }
 
     // Update is called once per frame
@@ -63,8 +68,13 @@ public class CtrlLockonTrigger : MonoBehaviour
             }
         }
 
+        if(shotTime >= MaxShotTime) {
+            if(!ChargeSoundFrag) {
+                ChargeSoundFrag = true;
+                LaserSound.PlayOneShot(ChargeComp);
+                ChargeEffect.SetActive(true);
+            }
         if(EnemyList != null) {
-            if(shotTime >= MaxShotTime) {
                 if(Input.GetAxis("RTrigger") > 0) {
                     foreach(GameObject go in EnemyList) {
                         if(go != null) {
@@ -76,6 +86,8 @@ public class CtrlLockonTrigger : MonoBehaviour
                                 LaserSound.PlayOneShot(sound2);
                             }
                             shotTime = 0f;
+                            ChargeSoundFrag = false;
+                            ChargeEffect.SetActive(false);
                             }
                         }
                     LockOnSound = false;

@@ -9,12 +9,11 @@ public class Tutorial : MonoBehaviour
 
     // チュートリアル用ステージのスクリプト
     public Image load;
-    public Text tutorial1;
-    public Text tutorial2;
-    public Text tutorial3;
-    public Text tutorial4;
-    public Text tutorial5;
-    public Text tutorial6;
+    public GameObject tutorial1;
+    public GameObject tutorial2;
+    public GameObject tutorial3;
+    public GameObject tutorial4;
+    public GameObject tutorial5;
 
     public GameObject Dummy;
 
@@ -65,24 +64,23 @@ public class Tutorial : MonoBehaviour
         Timer += Time.deltaTime;
         if(Timer >= 4f) {
             load.enabled = false;
-            tutorial1.enabled = true;
+            tutorial1.SetActive(true);
         }
         if(Timer >= 19f) {
-            tutorial1.enabled = false;
+            tutorial1.SetActive(false);
             load.enabled = true;
         }
         if(Timer >= 21f) {
             load.enabled = false;
-            tutorial2.enabled = true;
+            tutorial2.SetActive(true);
         }
         if(Timer >= 36f) {
-            tutorial2.enabled = false;
+            tutorial2.SetActive(false);
             load.enabled = true;
         }
         if(Timer >= 38f) {
             load.enabled = false;
-            tutorial3.enabled = true;
-            tutorial6.enabled = true;
+            tutorial3.SetActive(true);
             if(!one) {
                 one = true;
                 Instantiate(Dummy, Enemy1.transform.position, Quaternion.identity);
@@ -100,14 +98,13 @@ public class Tutorial : MonoBehaviour
             }
         }
         if(Timer >= 50f) {
-            tutorial3.enabled = false;
-            tutorial6.enabled = false;
+            tutorial3.SetActive(false);
             load.enabled = true;
 
         }
         if(Timer >= 52f) {
             load.enabled = false;
-            tutorial4.enabled = true;
+            tutorial4.SetActive(true);
             script = EnemyCountObj.GetComponent<RemainingEnemy>();
             if(script.EnemyCount == 0) {
                 Clear = true;
@@ -118,11 +115,11 @@ public class Tutorial : MonoBehaviour
         if(Clear) {
             Game.StageClearFrag[0] = true;
             ClearTimer += Time.deltaTime;
-            tutorial4.enabled = false;
+            tutorial4.SetActive(false);
             load.enabled = true;
             if(ClearTimer >= 2f) {
                 load.enabled = false;
-                tutorial5.enabled = true;
+                tutorial5.SetActive(true);
             }
             if(ClearTimer >= 4f) {
                 anim1.SetTrigger("Start");
