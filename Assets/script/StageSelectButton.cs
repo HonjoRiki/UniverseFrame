@@ -1,10 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class StageSelectButton : MonoBehaviour
 {
+    public Text ClearText1;
+    public Text ClearText2;
+    public Text ClearText3;
+    public Text ClearText4;
+    public Text ThanksText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,25 +21,51 @@ public class StageSelectButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Game.StageClearFrag[0]) {
+            ClearText1.enabled = true;
+        } else {
+            ClearText1.enabled = false;
+        }
 
+        if(Game.StageClearFrag[1]) {
+            ClearText2.enabled = true;
+        } else {
+            ClearText2.enabled = false;
+        }
+
+        if(Game.StageClearFrag[2]) {
+            ClearText3.enabled = true;
+        } else {
+            ClearText3.enabled = false;
+        }
+
+        if(Game.StageClearFrag[3]) {
+            ClearText4.enabled = true;
+        } else {
+            ClearText4.enabled = false;
+        }
+
+        if(Game.StageClearFrag[0] && Game.StageClearFrag[1] && Game.StageClearFrag[2] && Game.StageClearFrag[3]) {
+            ThanksText.enabled = true;
+        } else {
+            ThanksText.enabled = false;
+        }
     }
 
-    public void OnClick()
+    public void OnClick(int id)
     {
-        switch(transform.name) {
-            case "Stage1":
+        switch(id) {
+            case 0:
                 SceneManager.LoadScene("Stage1");
                 break;
-            case "Stage2":
+            case 1:
                 SceneManager.LoadScene("Stage2");
                 break;
-            case "Stage3":
+            case 2:
                 SceneManager.LoadScene("Stage3");
                 break;
-            case "Stage4":
+            case 3:
                 SceneManager.LoadScene("Stage4");
-                break;
-            default:
                 break;
         }
     }

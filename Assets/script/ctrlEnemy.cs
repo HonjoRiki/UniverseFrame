@@ -5,7 +5,7 @@ using UnityEngine;
 public class ctrlEnemy : MonoBehaviour
 {
 
-  public bool lockOnfalg = false;
+  public bool LockOnFrag = false;
   public bool IsList = false;
   public GameObject lockonCanvas;
 
@@ -40,12 +40,12 @@ public class ctrlEnemy : MonoBehaviour
         if(!IsList) {
             ExitTimer += Time.deltaTime;
             if(ExitTimer >= 2f) {
-                lockOnfalg = false;
+                LockOnFrag = false;
                 script.EnemyList.Remove(this.gameObject);
                 ExitTimer = 0f;
             }
         } else {
-            lockOnfalg = true;
+            LockOnFrag = true;
             ExitTimer = 0f;
         }
         shotTime += Time.deltaTime;
@@ -63,7 +63,7 @@ public class ctrlEnemy : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if(lockOnfalg) {
+        if(LockOnFrag) {
           lockonCanvas.SetActive(true);
         } else {
           lockonCanvas.SetActive(false);

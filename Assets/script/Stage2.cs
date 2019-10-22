@@ -8,7 +8,6 @@ public class Stage2 : MonoBehaviour
 {
 
     float Timer, EndTimer;
-    bool Clear, Failed;
 
     RemainingEnemy script;
     ctrlcharactor script1;
@@ -34,8 +33,6 @@ public class Stage2 : MonoBehaviour
         EndTimer = 0f;
         one1 = false;
         one2 = false;
-        Clear = false;
-        Failed = false;
         anim1 = Back.GetComponent<Animator>();
         anim2 = ClearText.GetComponent<Animator>();
         anim3 = FadeOut.GetComponent<Animator>();
@@ -64,6 +61,7 @@ public class Stage2 : MonoBehaviour
                 Wave3();
             }
             if(script.EnemyCount == 0) {
+                Game.StageClearFrag[1] = true;
                 ClearEvent();
             }
         }
@@ -95,7 +93,7 @@ public class Stage2 : MonoBehaviour
             anim3.SetTrigger("Start");
         }
         if(EndTimer >= 7f) {
-            SceneManager.LoadScene("Stage3");
+            SceneManager.LoadScene("StageSelect");
         }
     }
 

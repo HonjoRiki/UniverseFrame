@@ -17,7 +17,8 @@ public class CtrlLockonTrigger : MonoBehaviour
     public GameObject playerBullet;
     public GameObject playerNormalBullet;
     public GameObject shotPoint;
-    private float shotTime;
+    public float shotTime;
+    public float MaxShotTime;
     private float NormalLazerShotTtime;
 
     playerBullet script1;
@@ -26,6 +27,7 @@ public class CtrlLockonTrigger : MonoBehaviour
     // レーザー効果音
     public AudioClip sound1;
     public AudioClip sound2;
+    public AudioClip ChageComp;
     private AudioSource LaserSound;
     bool LockOnSound;
     bool NormalSound;
@@ -42,6 +44,7 @@ public class CtrlLockonTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        shotTime += Time.deltaTime;
 
         if(Input.GetButtonDown("R1button")) {
             Instantiate(playerNormalBullet, shotPoint.transform.position, Quaternion.identity);
@@ -61,10 +64,8 @@ public class CtrlLockonTrigger : MonoBehaviour
         }
 
         if(EnemyList != null) {
-            if(Input.GetAxis("RTrigger") > 0) {
-
-                shotTime += Time.deltaTime;
-                if(shotTime >= 1f) {
+            if(shotTime >= MaxShotTime) {
+                if(Input.GetAxis("RTrigger") > 0) {
                     foreach(GameObject go in EnemyList) {
                         if(go != null) {
                             GameObject bullet = Instantiate(playerBullet, shotPoint.transform.position, Quaternion.identity) as GameObject;
@@ -80,7 +81,7 @@ public class CtrlLockonTrigger : MonoBehaviour
                     LockOnSound = false;
                 }
             }
-            Debug.Log(EnemyList.Count);
+
         }
     }
 

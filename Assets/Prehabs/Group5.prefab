@@ -1258,6 +1258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa28d8911f83bbd4e984bc0ab038f54d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoveSpeed: 40
+  DistanceToPlayer: 100
 --- !u!54 &4871099452915036064
 Rigidbody:
   m_ObjectHideFlags: 0

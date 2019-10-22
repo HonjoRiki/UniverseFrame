@@ -46,10 +46,11 @@ public class playerBullet : MonoBehaviour
 
             acceleration = (diff - bulletSpeed * period) * 2f / (period * period);
 
-
+            /*
             if(acceleration.magnitude > 100f) {
                 acceleration = acceleration.normalized * 100f;
             }
+            */
 
 
 

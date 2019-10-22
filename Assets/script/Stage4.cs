@@ -53,6 +53,7 @@ public class Stage4 : MonoBehaviour
 
         if(Timer >= 1f) {
             if(script.EnemyCount == 0) {
+                Game.StageClearFrag[3] = true;
                 Clear = true;
             } else {
                 Clear = false;

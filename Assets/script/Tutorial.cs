@@ -116,6 +116,7 @@ public class Tutorial : MonoBehaviour
             }
         }
         if(Clear) {
+            Game.StageClearFrag[0] = true;
             ClearTimer += Time.deltaTime;
             tutorial4.enabled = false;
             load.enabled = true;
@@ -133,7 +134,7 @@ public class Tutorial : MonoBehaviour
                 anim3.SetTrigger("Start");
             }
             if(ClearTimer >= 11f) {
-                SceneManager.LoadScene("Stage2");
+                SceneManager.LoadScene("StageSelect");
             }
         }
 

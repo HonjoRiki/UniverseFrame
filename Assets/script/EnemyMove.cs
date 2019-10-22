@@ -5,19 +5,19 @@ using UnityEngine;
 public class EnemyMove : MonoBehaviour
 {
     GameObject playerObj;
-    float speed;
+    public float MoveSpeed;
+    public float DistanceToPlayer;
     // Start is called before the first frame update
     void Start()
     {
         playerObj = GameObject.Find("player");
-        speed = 20f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if((Vector3.Distance(playerObj.transform.position, transform.position) >= 100)) {
-            transform.position += transform.forward * speed * Time.deltaTime;
+        if((Vector3.Distance(playerObj.transform.position, transform.position) >= DistanceToPlayer)) {
+            transform.position += transform.forward * MoveSpeed * Time.deltaTime;
         }
     }
 }
