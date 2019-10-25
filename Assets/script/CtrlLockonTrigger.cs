@@ -34,6 +34,7 @@ public class CtrlLockonTrigger : MonoBehaviour
     bool ChargeSoundFrag;
 
     public GameObject ChargeEffect;
+    public GameObject ChargeCompEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,7 @@ public class CtrlLockonTrigger : MonoBehaviour
         NormalSound = false;
         ChargeSoundFrag = false;
         ChargeEffect.SetActive(false);
+        ChargeCompEffect.SetActive(false);
     }
 
     // Update is called once per frame
@@ -73,6 +75,7 @@ public class CtrlLockonTrigger : MonoBehaviour
                 ChargeSoundFrag = true;
                 LaserSound.PlayOneShot(ChargeComp);
                 ChargeEffect.SetActive(true);
+                ChargeCompEffect.SetActive(true);
             }
         if(EnemyList != null) {
                 if(Input.GetAxis("RTrigger") > 0) {
@@ -88,6 +91,7 @@ public class CtrlLockonTrigger : MonoBehaviour
                             shotTime = 0f;
                             ChargeSoundFrag = false;
                             ChargeEffect.SetActive(false);
+                            ChargeCompEffect.SetActive(false);
                             }
                         }
                     LockOnSound = false;
@@ -99,6 +103,7 @@ public class CtrlLockonTrigger : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+
         if(other.tag == "Enemy") {
             script = other.gameObject.GetComponent<ctrlEnemy>();
             script.IsList = true;

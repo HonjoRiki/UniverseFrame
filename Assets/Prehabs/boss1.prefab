@@ -819,6 +819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa28d8911f83bbd4e984bc0ab038f54d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoveSpeed: 50
+  DistanceToPlayer: 50
 --- !u!114 &8224452784760867528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,13 +858,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d739f6470830ecf4d8c60e65b0da52b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockOnfalg: 0
+  LockOnFrag: 0
   IsList: 0
   lockonCanvas: {fileID: 9154709239578876040}
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 200
   shotPos: {fileID: 35288390217398652}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!54 &1404675211133285716
 Rigidbody:

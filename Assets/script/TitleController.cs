@@ -46,7 +46,11 @@ public class TitleController : MonoBehaviour
         if(StartFlag) {
             StartTimer += Time.deltaTime;
             if(StartTimer >= 2f) {
-                SceneManager.LoadScene("Stage1");
+                if(Game.StageClearFrag[0]) {
+                    SceneManager.LoadScene("StageSelect");
+                } else {
+                    SceneManager.LoadScene("Stage1");
+                }
             }
         }
     }

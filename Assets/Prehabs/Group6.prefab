@@ -486,7 +486,9 @@ MonoBehaviour:
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 20
   shotPos: {fileID: 2334019165704023638}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1 &2334019165726181782
 GameObject:
@@ -909,7 +911,9 @@ MonoBehaviour:
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 20
   shotPos: {fileID: 2334019165951229262}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1 &2334019166021540622
 GameObject:
@@ -1332,7 +1336,9 @@ MonoBehaviour:
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 20
   shotPos: {fileID: 2334019166308420473}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1 &2334019166847569852
 GameObject:
@@ -1494,7 +1500,9 @@ MonoBehaviour:
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 20
   shotPos: {fileID: 2334019166909760721}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1 &2334019166962062991
 GameObject:
@@ -1617,7 +1625,9 @@ MonoBehaviour:
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 20
   shotPos: {fileID: 2334019167048662438}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!54 &2334019166603200774
 Rigidbody:
@@ -1666,7 +1676,9 @@ MonoBehaviour:
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 20
   shotPos: {fileID: 2334019167103567019}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!54 &2334019166444825735
 Rigidbody:
@@ -1715,7 +1727,9 @@ MonoBehaviour:
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 20
   shotPos: {fileID: 2334019167180027969}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1001 &2334019165703923958
 PrefabInstance:

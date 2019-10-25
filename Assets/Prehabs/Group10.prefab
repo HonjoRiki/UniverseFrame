@@ -107,13 +107,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d739f6470830ecf4d8c60e65b0da52b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockOnfalg: 0
+  LockOnFrag: 0
   IsList: 0
   lockonCanvas: {fileID: 8093528186744306837}
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 10
   shotPos: {fileID: 287032878424453728}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1 &2932859990556432873
 GameObject:
@@ -409,13 +411,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d739f6470830ecf4d8c60e65b0da52b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockOnfalg: 0
+  LockOnFrag: 0
   IsList: 0
   lockonCanvas: {fileID: 8631869087217877926}
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 10
   shotPos: {fileID: 3291360973239710789}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1 &3319917563209052155
 GameObject:
@@ -598,13 +602,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d739f6470830ecf4d8c60e65b0da52b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockOnfalg: 0
+  LockOnFrag: 0
   IsList: 0
   lockonCanvas: {fileID: 7082153753582695676}
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 10
   shotPos: {fileID: 3366457334961583742}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1 &4181330364978843347
 GameObject:
@@ -974,13 +980,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d739f6470830ecf4d8c60e65b0da52b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockOnfalg: 0
+  LockOnFrag: 0
   IsList: 0
   lockonCanvas: {fileID: 2932859990556432873}
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 10
   shotPos: {fileID: 4794827268957330541}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}
 --- !u!1 &7082153753582695676
 GameObject:
@@ -1552,11 +1560,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d739f6470830ecf4d8c60e65b0da52b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockOnfalg: 0
+  LockOnFrag: 0
   IsList: 0
   lockonCanvas: {fileID: 4521500483310649420}
   Bullet: {fileID: 8839406069855322206, guid: e484632ce71ca7e4c8e42480d528406e, type: 3}
   HP: 10
   shotPos: {fileID: 8940257842945498073}
-  ExplosionObj: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+  ExplosionObj1: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+    type: 3}
+  ExplosionObj2: {fileID: 6506024659358318470, guid: 43df93ab07793304fa543d38a4f94275,
     type: 3}

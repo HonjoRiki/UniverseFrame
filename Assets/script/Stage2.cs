@@ -14,7 +14,7 @@ public class Stage2 : MonoBehaviour
     GameObject EnemyCountObj;
     GameObject PlayerObj;
 
-    public Text info1, info2, info3;
+    public GameObject info1, info2, info3;
 
     public GameObject EnemyGroup1, EnemyGroup2, Boss;
     public GameObject point1, point2, point3;
@@ -69,16 +69,16 @@ public class Stage2 : MonoBehaviour
 
     void Wave2()
     {
-        info1.enabled = false;
-        info2.enabled = true;
+        info1.SetActive(false);
+        info2.SetActive(true);
         Instantiate(EnemyGroup1, point1.transform.position, Quaternion.identity);
         Instantiate(EnemyGroup2, point2.transform.position, Quaternion.identity);
     }
 
     void Wave3()
     {
-        info2.enabled = false;
-        info3.enabled = true;
+        info2.SetActive(false);
+        info3.SetActive(true);
         Instantiate(Boss, point3.transform.position, Quaternion.identity);
     }
 

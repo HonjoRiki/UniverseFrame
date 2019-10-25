@@ -21,7 +21,8 @@ public class ctrlEnemy : MonoBehaviour
 
   float ExitTimer;
 
-  public GameObject ExplosionObj;
+  public GameObject ExplosionObj1;
+  public GameObject ExplosionObj2;
   bool one;
 
     // Start is called before the first frame update
@@ -58,7 +59,8 @@ public class ctrlEnemy : MonoBehaviour
         if(HP < 0) {
             if(!one) {
                 one = true;
-                Instantiate(ExplosionObj, transform.position, Quaternion.identity);
+                Instantiate(ExplosionObj1, transform.position, Quaternion.identity);
+                Instantiate(ExplosionObj2, transform.position, Quaternion.identity);
             }
             Destroy(this.gameObject);
         }
